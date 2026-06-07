@@ -47,12 +47,11 @@ layout: none
         if (distance < 0) {
           clearInterval(x);
           document.getElementById("countdown").innerHTML = "THE GAME";
-        }
-
+        } else {
         // Display the result in the element with id="demo"
-        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+          document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
         + minutes + "m " + seconds + "s";
-      
+        }
       }
 
       updateCountdown();
